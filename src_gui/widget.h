@@ -54,9 +54,12 @@ private slots:
 
 
 
+    void on_SaveButton_clicked();
+
 private:
     Ui::Widget *ui;
 
+    QImage input;
     cv::Mat src;
     cv::Mat colormap;
     QButtonGroup *OptionGroups;

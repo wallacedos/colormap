@@ -30,16 +30,25 @@ QMAKE_CXXFLAGS += -std=c++0x
 
 CONFIG += c++11
 
-SOURCES += \
-    main.cpp \
-    widget.cpp
+SOURCES += main.cpp \
+    src_gui/widget.cpp \
+    src_generators/boxblur.cpp \
+    src_generators/gaussianblur.cpp \
+    src_generators/intensitymap.cpp \
+    src_gui/graphicsview.cpp \
+    src_gui/graphicsscene.cpp
 
-HEADERS += \
-        widget.h \
-    widget.h
+HEADERS += src_gui/widget.h \
+    src_generators/boxblur.h \
+    src_generators/gaussianblur.h \
+    src_generators/intensitymap.h \
+    src_gui/graphicsview.h \
+    src_gui/graphicsscene.h
 
-FORMS += \
-        widget.ui
+
+
+FORMS    += src_gui/widget.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -64,4 +73,5 @@ RC_FILE=logo.rc
 
 
 RESOURCES += \
-    colormapScale/colormapscale.qrc
+    colormapScale/colormapscale.qrc \
+    src_gui/colormapScale/colormapscale.qrc

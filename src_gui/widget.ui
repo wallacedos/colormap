@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1316</width>
-    <height>693</height>
+    <width>1317</width>
+    <height>901</height>
    </rect>
   </property>
   <property name="cursor">
@@ -141,7 +141,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/autumn.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/autumn.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -165,7 +165,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/bone.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/bone.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -189,7 +189,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/cool.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/cool.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -213,7 +213,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/hot.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/hot.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -237,7 +237,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/hsv.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/hsv.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -261,7 +261,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/jet.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/jet.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -285,7 +285,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/ocean.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/ocean.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -309,7 +309,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/parula.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/parula.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -333,7 +333,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/pink.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/pink.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -357,7 +357,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/rainbow.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/rainbow.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -381,7 +381,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/spring.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/spring.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -405,7 +405,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/summer.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/summer.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -429,7 +429,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/turbo.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/turbo.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -453,7 +453,7 @@ border-color: rgb(0, 0, 0);</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="colormapScale/colormapscale.qrc">:/images/winter.jpg</pixmap>
+           <pixmap resource="../colormapScale/colormapscale.qrc">:/images/winter.jpg</pixmap>
           </property>
          </widget>
         </item>
@@ -467,7 +467,7 @@ border-color: rgb(0, 0, 0);</string>
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>30</y>
+     <y>20</y>
      <width>231</width>
      <height>35</height>
     </rect>
@@ -511,10 +511,36 @@ border-color: rgb(0, 0, 0);</string>
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>630</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SaveButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>231</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 87 11pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="colormapScale/colormapscale.qrc"/>
+  <include location="../colormapScale/colormapscale.qrc"/>
  </resources>
  <connections/>
 </ui>

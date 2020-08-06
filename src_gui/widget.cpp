@@ -1,6 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
-
+#include "graphicsscene.h"
 
 
 
@@ -710,27 +710,6 @@ cv::Mat image2winter(const cv::Mat& src) {
     return dst;
 }
 
-//cv::Mat depth2normal(const cv::Mat &src) {
-//    cv::Mat normal = cv::Mat(src.size(), CV_8UC3, cv::Scalar(0));
-//    for (int y = 0; y < src.rows; ++y)
-//    {
-//        for (int x = 0; x < src.cols; ++x)
-//        {
-//            ushort d = src.ptr<ushort>(y)[x];
-//            if ( (x + 1) >= src.cols || (y + 1) >= src.rows || d == 0) {
-//                continue;
-//            }
-//            cv::Vec3b center(src.at<cv::Vec3b>(y, x));
-//            cv::Vec3b center_down_neibor(src.at<cv::Vec3b>(y+1, x));
-//            cv::Vec3b center_right_neibor(src.at<cv::Vec3b>(y, x+1));
-//            center_right_neibor -= center;
-//            center_down_neibor -= center;
-//            cv::Vec3b n = center_down_neibor.cross(center_right_neibor);
-//            normal.at<cv::Vec3b>(y, x) = cv::normalize(n);
-//        }
-//    }
-//    return normal;
-//}
 
 // DEBUG
 void PrintMat(const cv::Mat &one_channel_image) {
@@ -838,6 +817,9 @@ Widget::Widget(QWidget *parent) :
     connect(ui->SummerRadioButton, SIGNAL(clicked()), this, SLOT(on_OptionGroups()));
     connect(ui->TurboRadioButton, SIGNAL(clicked()), this, SLOT(on_OptionGroups()));
     connect(ui->WinterRadioButton, SIGNAL(clicked()), this, SLOT(on_OptionGroups()));
+
+
+
 }
 
 Widget::~Widget()
@@ -890,6 +872,10 @@ void Widget::dropEvent(QDropEvent *event)
 //        mes.warning(this, tr("warning!"),tr("Failed to open image"));
 //    }
 }
+
+
+
+
 
 void Widget::on_OptionGroups()
 {
@@ -993,7 +979,8 @@ void Widget::on_LoadButton_clicked()
 
 void Widget::Widget::keyPressEvent(QKeyEvent *event)
 {
-   switch(event->key()) {
+   switch(event->key())
+   {
      //进行界面退出，重写Esc键，否则重写reject()方法
       case Qt::Key_Escape:
           this->close();
@@ -1001,34 +988,20 @@ void Widget::Widget::keyPressEvent(QKeyEvent *event)
    }
 }
 
-//void Widget::on_AutumnRadioButton_toggled(bool checked)
-//{
-//    if (ui->AutumnRadioButton->isChecked())
-//    {
-//        qDebug() << "Autumn button is checked !";
-//    }
-//    else
-//    {
-//        qDebug() << "Autumn button is not checked !";
-//    }
-//}
-
-//void Widget::on_BoneRadioButton_toggled(bool checked)
-//{
-//    if (ui->BoneRadioButton->isChecked())
-//    {
-//        qDebug() << "Bone button is checked !";
-//    }
-//    else
-//    {
-//        qDebug() << "Bone button is not checked !";
-//    }
-//}
-
-//void Widget::on_AutumnRadioButton_clicked()
-//{
-//    qDebug() << "Autumn button is checked !";
-//}
 
 
 
+
+void Widget::on_SaveButton_clicked()
+{
+    const QPixmap * pix = ui->RawImageLabel->pixmap();
+    if (pix)
+    {
+        QImage saveImg  = pix->toImage();
+        QString savename = QFileDialog::getSaveFileName(this,tr("Save Image"),"",tr("Images (*.png *.bmp *.jpg)")); //选择路径
+        if (!savename.isEmpty())
+        {
+            saveImg.save(savename);
+        }
+    }
+}
